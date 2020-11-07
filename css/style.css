@@ -1,0 +1,26 @@
+/* Lab 04 PWA */
+
+body {
+  font-family: sans-serif;
+}
+
+/* Make content area fill the entire browser window */
+html, .fullscreen {
+  display: flex;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background: rgb(2,0,36);
+  background: linear-gradient(21deg, rgba(2,0,36,1) 0%, rgb(222, 94, 94) 0%, rgb(227, 16, 16) 100%);
+}
+
+/* Center the content in the browser window */
+.container {
+  margin: auto;
+  text-align: center;
+}
+
+.title {
+  font-size: 3rem;
+}

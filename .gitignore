@@ -1,0 +1,12 @@
+#This file lists all files that should be ignored by git.\
+
+.idea
+.vscode/*
+*.iml
+
+
+# Google Drive exclude
+desktop.ini
+
+#mac specific exception
+.DS_Store

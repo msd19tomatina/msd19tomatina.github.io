@@ -5,7 +5,6 @@
     <meta charset="utf-8">
 
     <title>Tomatina</title>
-
     <!-- Manifest and Styles -->
     <link rel="manifest" href="manifest.json">
     <link rel="stylesheet" href="css/style.css">
@@ -41,19 +40,36 @@
 
     <body class="fullscreen">
         <div class="container">
-            <h1 class="title">Start Pomodoro Timer</h1>
+            <h1 class="title">Tomatina</h1>
+            <h2 class="title">Timer</h2>
 
     <!-- Web Worker  -->
-    <h2>Web Worker</h2>
     <button onclick="askWebworkerForRecurringTask()">Start Timer</button>
     <output class="webworker" id="timer"></output>
 
     <!-- Service Worker -->
-    <h2>Start Pomodoro Timer</h2>
     <output class="serviceworker"></output>
-</div>
+
+        </div>
+        <!--  <nav class=" navbar navbar-expand-lg navbar-light bg-light fixed-top py-lg-0 "> -->
+
+    <!--    <nav class="navbar navbar-default navbar-fixed-top  ">
+        <a class="navbar-brand" href="#">
+                    <img src="/msd19tomatina.github.io/img/icons/gruppe_beitreten.png" width="70" height="70" alt="">
+                </a>
 
 
+                <a class="navbar-brand" href="#">
+                    <img src="/msd19tomatina.github.io/img/icons/gruppe_beitreten.png" width="70" height="70" alt="">
+                    <li class="nav-item active">
+
+                </a>
+            </nav> -->
+        <div class="navbar">
+            <a href="#home" class="active"><img src="/msd19tomatina.github.io/img/icons/gruppe_beitreten.png" width="70" height="70" alt=""></a>
+            <a href="#news">News</a>
+            <a href="#contact">Contact</a>
+        </div>
 
 <!-- Scripts -->
 <script src="js/use_webworker.js"></script>

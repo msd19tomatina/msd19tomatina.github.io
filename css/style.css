@@ -1,7 +1,7 @@
 /* Lab 04 PWA */
 
 body {
-  font-family: sans-serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, Ubuntu;
 }
 
 /* Make content area fill the entire browser window */
@@ -27,9 +27,9 @@ html, .fullscreen {
 
 /* Place the navbar at the bottom of the page, and make it stick */
 .navbar {
-  /*background-color: #333; */
+  /* background-color: #333; */
   overflow: hidden;
-  position: fixed;
+ /* position: fixed; */
   bottom: 0;
   width: 100%;
 }
@@ -51,4 +51,18 @@ html, .fullscreen {
   color: black;
 }
 
+.btn-success {
+  background-color: tomato;
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: darkred;
+}
+
+.modal-content {
+  background-color: tomato;
+  align-items: center;
+  align-content: center;
+}
 

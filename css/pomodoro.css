@@ -43,7 +43,14 @@ html, .fullscreen {
     text-decoration: none;
     font-size: 17px;
 }
+a {
+    text-decoration: none;
 
+}
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
 /* Change the color of links on hover */
 .navbar a:hover {
     background-color: #ddd;

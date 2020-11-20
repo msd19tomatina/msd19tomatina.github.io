@@ -1,0 +1,67 @@
+{
+  "user":[
+    {
+      "id": "5fb4c51ab2e3db2c805e6aec",
+      "email": "isi@tomatina.at",
+      "username": "ez",
+      "name": "Islam",
+      "surname": "H.",
+      "password": "m9b4CRBord1",
+      "groups":[
+        {
+        "id": "5fb4c5d459f8c4e5d3748c55",
+          "name":  "Gruppe 1",
+          "pomodoros": "4"
+      },
+        {
+          "id": "5fb4eaf370896ed1b1080791",
+          "name":"Gruppe 2",
+          "pomodoros": "12"
+        }
+      ]
+    },
+
+    {
+      "id": "5fb4eba91adf6a8117848e50",
+      "email": "rob@tomatina.at",
+      "username": "robsky",
+      "name": "Robert",
+      "surname": "Z.",
+      "password": "m9brd14CRBo",
+      "groups":[
+        {
+          "id": "5fb4c5d459f8c4e5d3748c55",
+          "name":  "Gruppe 1",
+          "pomodoros": "6"
+        },
+        {
+          "id": "5fb4eaf370896ed1b1080791",
+          "name":"Gruppe 2",
+          "pomodoros": "3"
+        }
+      ]
+    },
+
+
+    {
+      "id": "5fb4ebb8f720561447e2d0a1",
+      "email": "martin@tomatina.at",
+      "username": "mart",
+      "name": "Martin",
+      "surname": "G.K.",
+      "password": "4CRBm9bo1rd",
+      "groups":[
+        {
+          "id": "5fb4c5d459f8c4e5d3748c55",
+          "name":  "Gruppe 1",
+          "pomodoros": "2"
+        },
+        {
+          "id": "5fb4eaf370896ed1b1080791",
+          "name":"Gruppe 2",
+          "pomodoros": "2"
+        }
+      ]
+    }
+  ]
+}

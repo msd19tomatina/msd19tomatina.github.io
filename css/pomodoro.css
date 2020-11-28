@@ -87,3 +87,10 @@ a:hover {
 .navText {
     font-size: 1em;
 }
+
+@media only screen and (max-width: 768px) {
+    .navText {
+        font-size: 0.4em;
+    }
+    
+}

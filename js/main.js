@@ -1,4 +1,5 @@
 /* MAIN */
+var datafilepath="test_data/test_user_data.json";
 
 // Detects if device is on iOS
 const isIos = () => {

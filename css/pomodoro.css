@@ -78,5 +78,8 @@ a:hover {
 }
 .timer {
     /*dirty hack, needs to be inproved */
-    padding-top: 10em;
+    padding-top: 5em;
+}
+#Gruppe {
+    padding-bottom: 3em;
 }

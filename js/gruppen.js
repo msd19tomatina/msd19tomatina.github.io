@@ -22,7 +22,7 @@ $.ajax({
                   cards.appendChild(newUser);
 
                     newScore.setAttribute("class", "user col-sm-6");
-                    newScore.innerHTML=myGroup.pomodoros + " Pomodoros";
+                    newScore.innerHTML=myGroup.pomodoros + " P.";
 
 
                     cards.appendChild(newScore);

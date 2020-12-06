@@ -1,52 +1,51 @@
-var id = "5fb4eaf370896ed1b1080791"
-var template = document.getElementById("card-template");
+var id = "5fb4c5d459f8c4e5d3748c55"
+
 var cards = document.getElementById("memberRows");
 
 $.ajax({
     url: datafilepath,
-    dataType:"json",
-    type:"get",
+    dataType: "json",
+    type: "get",
     cache: false,
     success: function (items) {
-        $(items.user).each(function(i, myUser){
-            var card = template.content.cloneNode(true);
-            $(myUser.groups).each(function(i, myGroup){
+        items.user.forEach(function (myUser, i) {
+            myUser.groups.forEach(function (myGroup, i) {
+
                 if (myGroup.id === id) {
-                    document.getElementById("Gruppe").innerHTML=myGroup.name;
-                    card.querySelector(".group-member-name").innerHTML=myUser.username;
-                    card.querySelector(".group-member-pomodoro").innerHTML=myGroup.pomodoros;
-                    cards.appendChild(card);
+                    var newCard = document.createElement("div");
+                    newCard.setAttribute("class", "card");
+                    var newUser = document.createElement("div");
+                    var newScore = document.createElement("div");
+                    document.getElementById("Gruppe").innerText=myGroup.name;
+
+                    newUser.setAttribute("class", "user");
+                    newUser.innerHTML=myUser.username;
+                    newCard.appendChild(newUser);
+
+                    newScore.setAttribute("class", "user");
+                    newScore.innerHTML=myGroup.pomodoros;
+
+
+                    newCard.appendChild(newScore);
+                    cards.appendChild(newCard);
+
                 }
-
             })
-
-
-    })
-
-        }
-    })
-;
-
-function fillMembers (members) {
-    if (members === null || members === undefined || members.length < 1)
-        return;
-
-    let cards = document.getElementById("memberRows");
-
-    for (let i = 0; i < members.length; i++) {
-        // Create the list item:
-        let item = document.createElement('div');
-        item.className = "card col-sm-6"
-        // item.className="list-group-item"
-
-        // Set its contents:
-        item.innerText = members[i].username;
-
-        // Add it to the list:
-        cards.appendChild(item);
+        })
     }
+});
 
+
+function addElement(parentId, elementTag, elementId, html) {
+    // Adds an element to the document
+    var p = document.getElementById(parentId);
+    var newElement = document.createElement(elementTag);
+    newElement.setAttribute('id', elementId);
+    newElement.innerHTML = html;
+    p.appendChild(newElement);
 }
+
+
 
 function startTimer(duration, display) {
 

@@ -87,3 +87,8 @@ a:hover {
 .navText {
     font-size: 1em;
 }
+
+.card {
+    border: none;
+    background-color: rgba(222, 94, 94, 0.3);
+}

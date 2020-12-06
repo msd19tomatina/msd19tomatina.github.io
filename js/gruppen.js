@@ -12,22 +12,20 @@ $.ajax({
             myUser.groups.forEach(function (myGroup, i) {
 
                 if (myGroup.id === id) {
-                    var newCard = document.createElement("div");
-                    newCard.setAttribute("class", "card");
                     var newUser = document.createElement("div");
                     var newScore = document.createElement("div");
+
                     document.getElementById("Gruppe").innerText=myGroup.name;
 
-                    newUser.setAttribute("class", "user");
+                    newUser.setAttribute("class", "user col-sm-6");
                     newUser.innerHTML=myUser.username;
-                    newCard.appendChild(newUser);
+                  cards.appendChild(newUser);
 
-                    newScore.setAttribute("class", "user");
-                    newScore.innerHTML=myGroup.pomodoros;
+                    newScore.setAttribute("class", "user col-sm-6");
+                    newScore.innerHTML=myGroup.pomodoros + " Pomodoros";
 
 
-                    newCard.appendChild(newScore);
-                    cards.appendChild(newCard);
+                    cards.appendChild(newScore);
 
                 }
             })

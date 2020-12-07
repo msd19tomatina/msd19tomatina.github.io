@@ -78,7 +78,7 @@ a:hover {
 }
 .timer {
     /*dirty hack, needs to be inproved */
-    padding-top: 5em;
+    padding-top: 2em;
 }
 #Gruppe {
     padding-bottom: 1em;
@@ -91,4 +91,37 @@ a:hover {
 .card {
     border: none;
     background-color: rgba(222, 94, 94, 0.3);
+}
+
+input {
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 2px solid red;
+    outline: none;
+}
+
+.checkIcon {
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+}
+
+#joinCode {
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+#friendsInfo {
+    font-size: 1em;
+}
+
+.bottomLink a{
+    color: black;
+    background-color: transparent;
+}
+.bottomLink:hover a{
+    color: black;
+    background-color: transparent;
 }

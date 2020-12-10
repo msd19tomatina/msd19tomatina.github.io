@@ -1,6 +1,6 @@
 var id = "5fb4c5d459f8c4e5d3748c55"
+var cards = document.getElementById("members");
 
-var cards = document.getElementById("memberRows");
 
 $.ajax({
     url: datafilepath,
@@ -12,36 +12,33 @@ $.ajax({
             myUser.groups.forEach(function (myGroup, i) {
 
                 if (myGroup.id === id) {
-                    var newUser = document.createElement("div");
-                    var newScore = document.createElement("div");
+                    var row = document.createElement(("div"));
+                    row.setAttribute("class", "row");
+                    var card = document.createElement("div");
+                    card.setAttribute("class", "card");
+
 
                     document.getElementById("Gruppe").innerText=myGroup.name;
 
-                    newUser.setAttribute("class", "user col-sm-6");
+                    var newUser = document.createElement("div");
+                    var newScore = document.createElement("div");
+                    newUser.setAttribute("class", "col-6");
                     newUser.innerHTML=myUser.username;
-                  cards.appendChild(newUser);
+                    row.appendChild(newUser);
 
-                    newScore.setAttribute("class", "user col-sm-6");
+                    newScore.setAttribute("class", "col-6");
                     newScore.innerHTML=myGroup.pomodoros + " P.";
 
 
-                    cards.appendChild(newScore);
-
+                    row.appendChild(newScore);
+                    card.appendChild(row);
+                    cards.appendChild(card);
                 }
             })
         })
     }
 });
 
-
-function addElement(parentId, elementTag, elementId, html) {
-    // Adds an element to the document
-    var p = document.getElementById(parentId);
-    var newElement = document.createElement(elementTag);
-    newElement.setAttribute('id', elementId);
-    newElement.innerHTML = html;
-    p.appendChild(newElement);
-}
 
 
 

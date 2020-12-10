@@ -1,4 +1,5 @@
-var id = "5fb4c5d459f8c4e5d3748c55"
+//var id = "5fb4c5d459f8c4e5d3748c55"
+var id = new URLSearchParams(window.location.search).get("id");
 var cards = document.getElementById("members");
 
 

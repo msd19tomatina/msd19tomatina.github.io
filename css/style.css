@@ -65,3 +65,24 @@ html, .fullscreen {
   align-content: center;
   justify-content: center;
 }
+
+thead {
+  background-color: tomato;
+}
+
+ a {
+   text-decoration: none;
+
+ }
+ a:hover {
+   text-decoration: none;
+   color: inherit;
+ }
+
+ .card {
+   background-color: rgba(222, 94, 94, 0.3);
+ }
+
+th, td {
+   border: none;
+ }

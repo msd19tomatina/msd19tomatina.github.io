@@ -1,21 +1,20 @@
-# MSD Mobile Platforms #
-## Lab 04 Teil 1: PWAs ##
-by Mathias Knoll
+# MSD Mobile Platforms
+## Tomatina PWA
+Assignment for the subject mobile platforms at FH JOANNEUM.<br>
 
-### Ein Manifest verfassen ###
+by: 
+ - Islam Hemida
+ - Robert Zavaczki
+ - Martin Guevara-Kunerth <br>
 
-Ein Dokument in der Javascript Object Notation (JSON) welches die WebApp(PWA) beschreibt.
+Following the template provided by DI (FH) MSc Mathias Knoll.
 
-* Datei: manifest.json
-* [Referenz](https://w3c.github.io/manifest/) 
-* [Tutorial](https://developer.mozilla.org/en-US/docs/Web/Manifest)
+#### What it does
+The assignment was to make a PWA based on our prototypes made in the previous mobile platforms assignments.
+Base idea is a Progressive Web Application that allows the user to track his learn sessions following the pomodoro
+method. Our data to populate the pwa is retrieved from a local json file. At a later date it is planned to implement a 
+database hosted on a live server to allow real tracking and user creation.
 
-## Tomatina PWA ##
-by Robert Zavaczki, Islam Hemida, Martin Guevara-Kunerth
+The artist Vanja Vikalo / LINNCH kindly allowed us to use his art for the launch screen and icons.
 
-#### What it does ####
-Progressive Web Application that allows the user to track his learn sessions following the pomodoro
-method.
-
-At a later date the pwa should allow the user to track his learn sessions and compare them in a friendly
-competition with other users.
+http://linnch.com/

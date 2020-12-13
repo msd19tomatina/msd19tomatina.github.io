@@ -18,3 +18,6 @@ database hosted on a live server to allow real tracking and user creation.
 The artist Vanja Vikalo / LINNCH kindly allowed us to use his art for the launch screen and icons.
 
 http://linnch.com/
+
+Our PWA can be opened at https://msd19tomatina.github.io/ <br>
+open it with your mobile web browser and copy a shortcut to your home screen.

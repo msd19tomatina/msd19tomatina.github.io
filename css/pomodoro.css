@@ -11,7 +11,7 @@ html, .fullscreen {
     margin: 0;
     padding: 0;
     width: 100%;
-    background: rgb(2,0,36);
+    background: #161616;
     background: linear-gradient(21deg, rgba(2,0,36,1) 0%, rgb(222, 94, 94) 0%, rgb(227, 16, 16) 100%);
 }
 
@@ -38,7 +38,7 @@ html, .fullscreen {
 .navbar a {
     float: left;
     display: block;
-    color: #000;
+    color: #161616;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -55,7 +55,11 @@ a:hover {
 /* Change the color of links on hover */
 .navbar a:hover {
     background-color: transparent;
-    color: black;
+    color: #161616;
+}
+
+a:focus {
+    color: #161616;
 }
 
 .btn-success {
@@ -120,11 +124,11 @@ input {
 }
 
 .bottomLink a{
-    color: black;
+    color: #161616;
     background-color: transparent;
 }
 .bottomLink:hover a{
-    color: black;
+    color: #161616;
     background-color: transparent;
 }
 
